@@ -7,13 +7,14 @@ function App() {
 
   const [showSurprise, setShowSurprise] = useState(false);
 
-  const photos = [
-    "/images/photo1.jpeg",
-    "/images/photo2.jpeg",
-    "/images/photo3.jpeg",
-    "/images/photo4.jpeg",
-    "/images/photo5.jpeg"
-  ];
+
+const photos = [
+  process.env.PUBLIC_URL + "/images/photo1.jpeg",
+  process.env.PUBLIC_URL + "/images/photo2.jpeg",
+  process.env.PUBLIC_URL + "/images/photo3.jpeg",
+  process.env.PUBLIC_URL + "/images/photo4.jpeg",
+  process.env.PUBLIC_URL + "/images/photo5.jpeg"
+];
 
   return (
     <div className="container">
