@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+body{
+  margin:0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  width:520px;
+  padding:35px;
+  background:white;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+  color:#ff4d88;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  color:#444;
+  margin-top:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.surpriseBtn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:12px;
+  font-size:18px;
+  background:#ff4d88;
+  color:white;
+  cursor:pointer;
+}
+
+.surpriseBtn:hover{
+  background:#ff1f6b;
+}
+
+.gallery{
+  margin-top:25px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+
+.photo{
+  width:100%;
+  border-radius:10px;
+}
+
+.message{
+  margin-top:20px;
+  color:#ff4d88;
 }
